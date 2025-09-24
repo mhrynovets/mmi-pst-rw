@@ -2,8 +2,11 @@
 # Script Overview
 This script handles the backup and writing DataPST.db in Audi MMI. 
 It creates backups, writes new data when available, and verifies the process through logging.
+
 **Credits to drger** (www.audizine.com, https://github.com/DrGER2/MMI3G-GEM-Enable)
+
 Also used resouces from https://github.com/megusta1337/Copie_scr_Decoder/
+
 ---
 ## 1. Key Points of the Script
 * **Backup and Write Operations**: The script backs up database files and dumps filesystem resources on each run. It can also write new database files if they are available.
@@ -21,6 +24,7 @@ The script processes the following resources on the device:
   * `/dev/fs0`
   * `/dev/fs1`
   * `/dev/fs4`
+
 These files are copied to backup locations and can also be written to if necessary.
 ---
 ## 3. Directories the Script Works With
@@ -63,7 +67,9 @@ The script will look for the following files:
 * `HBpersistence-DataPST.db`
 * `hmisql-DataPST.db`
 ### 3. **Run the Script**
-To run the script, copy all files with required binaries on a SD card, formatted in FAT32
+To run the script, copy all files with required binaries on a SD card, formatted in FAT32.
+Then insert the SD card into MMI and follow instructions.
+
 ---
 ## Notes:
 * Ensure the script has appropriate permissions to read, write, and modify files in the specified directories.
